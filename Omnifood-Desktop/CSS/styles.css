@@ -11,10 +11,11 @@ FONT SIZE SYSTEM (PX)
 ------01 COLORS
 --Colors
 -Primary: #e67e22
--Tints:
--Shades:
+-Tints: #fae5d3
+-Shades:#cf711f
 -Greys: 
 #555
+#333
 
 ------03 SHADOWS
 ------04 BORDER-RADIUS
@@ -36,17 +37,125 @@ html{
 }
 
 body{
+  font-family: 'Rubik', sans-serif;
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
 }
 
-.test{
+/* .test{ */
   /* width: 1000px; */
-  background-color: red;
+  /* background-color: red;
   max-width: 3rem;
   font-size: 1.8rem;
   padding : 7rem;
 
+} */
+.section-hero{
+  background-color: #fae5d3;
+  /* should be 0rem on left and right as per jonas */
+  padding: 9.6rem 5rem;
+}
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  /* background-color: red; */
+  align-items: center;
+  margin: 0 auto;
+  gap: 9.6rem;
+}
+.heading-primary{
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description{
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn{
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-weight: 600;
+  
+  transition: background-color 300ms
+}
+
+.btn--full{
+  background-color: #e67e22 ;
+}
+
+.btn--full:hover{
+  /* color: blue; */
+  background-color: #cf711f;
+  /* background-color: red; */
+  /* background-color: blue; */
+}
+
+.btn--outline:link,
+.btn--outline:visited{
+  background-color: white;
+  color: rgb(37, 35, 35);
+}
+
+.btn--outline:hover,
+.btn--outline:active{
+  background-color: #fae5d3;
+  border: 1px solid white;
+  /* trick to add border inside*/
+  box-shadow: inset 0 0 0 1px white;
+}
+
+.hero-img{
+  width: 100%;
+}
+
+.margin-right-sm{
+  margin-right: 1.6rem;
+}
+
+.delivered-meals{
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-imgs{
+  display: flex;
+}
+
+.delivered-imgs img{
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-left: -1rem;
+  border: 3px solid #fae5d3;
+}
+
+.delivered-imgs img:first-child{
+  margin-left: 0;
+}
+
+.delivered-text{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span{
+  color: #cf711f;
+  font-weight: 700;
 }
