@@ -121,6 +121,36 @@
 }
 
 /* ******************* */
+/* Section Featured In*/
+/* ******************* */
+
+.logos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img{
+  height: 3.8rem;
+  /* filter: grayscale(100%); */
+  filter: brightness(40%);
+  opacity: 40%;
+}
+
+.section-featured{
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+
+/* ******************* */
 /* Section How*/
 /* ******************* */
 
@@ -147,6 +177,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before{
+  content: "";
+  display: block;
+  width: 60%;
+  /* height: 40rem; */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.step-img-box::after{
+  content: "";
+  width: 50%;
+  /* height: 50%; */
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .step-img{
